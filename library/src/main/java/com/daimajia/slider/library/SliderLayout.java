@@ -2,6 +2,7 @@ package com.daimajia.slider.library;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.os.Handler;
 import android.os.Message;
 import android.support.v4.view.PagerAdapter;
 import android.util.AttributeSet;
@@ -237,7 +238,7 @@ public class SliderLayout extends RelativeLayout{
         mSliderAdapter.addSlider(imageContent);
     }
 
-    private android.os.Handler mh = new android.os.Handler(){
+    private android.os.Handler mh = new Handler(){
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
